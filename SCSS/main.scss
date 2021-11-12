@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$border-color: #EE5A24;
+$h2-color: #4834d4;
+$text-color: white;
+$link-color: black;
+$icon-color: #e67e22;
+
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 200px;
+
+    .info-box{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border: 1px solid;
+        border-radius: 5px;
+        margin: 20px;
+        width: 500px;
+        height: 425px;
+
+        svg, h3, p{
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            transition-duration: 1s;
+        }
+    }
+
+    
+}
+
+.more{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 220px 0;
+
+    .title{
+        h2{
+            font-size: 2em;
+            color: $h2-color;
+        }
+    }
+
+    .more-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 4px solid grey;
+        border-radius: 10px;
+        width: 200px;
+        text-align: center;
+        padding: 15px;
+
+        i{
+            color: $icon-color;
+            font-size: 1.3em;
+            padding-right: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: $link-color;
+            font-size: 1.3em;
+        }
+
+        &:hover{
+            border-color: $border-color;
+            transition-duration: 1s;
+
+            i{
+                padding-right: 5px;
+            }
+        }
+    } 
+}
+
+#info-tech{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(https://www.simbrella.com/site/assets/files/1049/solutions_bg-1.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+
+    .tech-box{
+        display: flex;
+        
+    
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2{
+                color: $text-color;
+                padding-left: 200px;
+                font-size: 3em;
+            }
+        }
+        
+        .list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            opacity: 0.5;
+
+            ul{
+                list-style: none;
+                padding-right: 200px;
+    
+                li{
+                    margin: 20px 0;
+                    border-bottom: 1px solid;
+                    padding: 20px 0;
+                    color: $text-color;
+                    font-size: 1.5em;
+    
+                    &:last-child{
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+        
+    }
+}
